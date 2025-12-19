@@ -4,189 +4,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Stock Market Analysis Extension</title>
+    <title>Privacy Policy - AI US Stock Analysis</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
             color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #764ba2;
-            margin-top: 30px;
-        }
-
-        h3 {
-            color: #555;
-            margin-top: 20px;
-        }
-
-        ul {
-            padding-left: 30px;
+            font-size: 32px;
+            margin-bottom: 10px;
         }
 
         .last-updated {
             color: #666;
-            font-style: italic;
+            font-size: 14px;
             margin-bottom: 30px;
         }
 
-        .contact {
-            background: #f5f5f5;
-            padding: 20px;
-            border-radius: 8px;
+        h2 {
+            color: #333;
+            font-size: 24px;
             margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .contact {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Privacy Policy for Stock Market Analysis Extension</h1>
-    <p class="last-updated"><strong>Last Updated:</strong> December 20, 2024</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: December 20, 2024</p>
 
-    <h2>Overview</h2>
-    <p>Stock Market Analysis ("we", "our", or "the extension") is committed to protecting your privacy. This privacy
-        policy explains how our Chrome extension collects, uses, and safeguards information.</p>
+        <div class="highlight">
+            <strong>Summary:</strong> AI US Stock Analysis does not collect, store, or transmit any personal data. We
+            are committed to protecting your privacy and ensuring complete transparency about how our extension works.
+        </div>
 
-    <h2>Information Collection</h2>
-
-    <h3>Data We Collect</h3>
-    <p>Our extension collects minimal data to provide stock market analysis functionality:</p>
-    <ol>
-        <li><strong>Stock Symbol Queries:</strong> When you search for or click on stock symbols, we temporarily process
-            these queries to fetch real-time market data.</li>
-        <li><strong>No Personal Information:</strong> We do NOT collect:
-            <ul>
-                <li>Personal identification information</li>
-                <li>Browsing history</li>
-                <li>Email addresses</li>
-                <li>Payment information</li>
-                <li>Location data</li>
-                <li>Cookies or tracking data</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h3>How We Use Information</h3>
-    <p>The stock symbols you interact with are used solely to:</p>
-    <ul>
-        <li>Fetch real-time stock prices from Yahoo Finance API</li>
-        <li>Retrieve currency exchange rates</li>
-        <li>Generate AI-powered analysis</li>
-        <li>Display technical indicators</li>
-    </ul>
-    <p><strong>All data processing happens locally in your browser or through public APIs. We do not store or transmit
-            your personal data to our servers.</strong></p>
-
-    <h2>Third-Party Services</h2>
-    <p>Our extension uses the following third-party services:</p>
-    <ol>
-        <li><strong>Yahoo Finance API</strong>
-            <ul>
-                <li>Purpose: Real-time stock quotes and market data</li>
-                <li>Data Shared: Stock symbols only</li>
-                <li>Privacy Policy: <a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html"
-                        target="_blank">Yahoo Privacy Policy</a></li>
-            </ul>
-        </li>
-        <li><strong>Exchange Rate API</strong>
-            <ul>
-                <li>Purpose: Currency conversion (USD to KRW)</li>
-                <li>Data Shared: None (public API)</li>
-                <li>Privacy Policy: <a href="https://www.exchangerate-api.com/terms" target="_blank">Exchange Rate API
-                        Terms</a></li>
-            </ul>
-        </li>
-        <li><strong>grcbt.com</strong>
-            <ul>
-                <li>Purpose: Detailed stock analysis (optional, user-initiated)</li>
-                <li>Data Shared: Stock symbol via URL parameter when user clicks link</li>
-                <li>Privacy Policy: <a href="https://grcbt.com/privacy-policy" target="_blank">grcbt.com Privacy
-                        Policy</a></li>
-            </ul>
-        </li>
-    </ol>
-
-    <h2>Permissions Explanation</h2>
-    <p>Our extension requests the following Chrome permissions:</p>
-    <ol>
-        <li><strong>storage:</strong> To cache stock data temporarily (improves performance, reduces API calls)</li>
-        <li><strong>activeTab:</strong> To detect stock symbols on the current webpage you're viewing</li>
-        <li><strong>host_permissions:</strong> To access Yahoo Finance and Exchange Rate APIs for fetching stock data
-        </li>
-    </ol>
-    <p><strong>We use the minimum permissions necessary for functionality.</strong></p>
-
-    <h2>Data Storage</h2>
-    <ul>
-        <li><strong>Local Storage Only:</strong> Stock data is cached locally in your browser for 1-60 minutes to
-            improve performance</li>
-        <li><strong>No Cloud Storage:</strong> We do not store your data on external servers</li>
-        <li><strong>Automatic Deletion:</strong> Cached data is automatically cleared when cache expires</li>
-    </ul>
-
-    <h2>Data Sharing</h2>
-    <p>We do NOT:</p>
-    <ul>
-        <li>Sell your data to third parties</li>
-        <li>Share your data with advertisers</li>
-        <li>Track your browsing behavior</li>
-        <li>Create user profiles</li>
-    </ul>
-
-    <h2>User Control</h2>
-    <p>You have full control over the extension:</p>
-    <ul>
-        <li><strong>Disable anytime:</strong> Remove the extension from Chrome to stop all data processing</li>
-        <li><strong>Clear cache:</strong> Clear browser cache to remove stored stock data</li>
-        <li><strong>No account required:</strong> The extension works without registration or login</li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>Our extension is not directed to children under 13. We do not knowingly collect information from children.</p>
-
-    <h2>Changes to Privacy Policy</h2>
-    <p>We may update this privacy policy occasionally. Changes will be posted with a new "Last Updated" date.</p>
-
-    <h2>Compliance</h2>
-    <p>This extension complies with:</p>
-    <ul>
-        <li>Chrome Web Store Developer Program Policies</li>
-        <li>General Data Protection Regulation (GDPR)</li>
-        <li>California Consumer Privacy Act (CCPA)</li>
-    </ul>
-
-    <h2>Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-        <li>Know what data is collected (minimal, as described above)</li>
-        <li>Request data deletion (uninstall the extension)</li>
-        <li>Opt-out of data collection (don't use the extension)</li>
-    </ul>
-
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>For privacy concerns or questions:</p>
+        <h2>1. Information We Do NOT Collect</h2>
+        <p>AI US Stock Analysis is designed with privacy as a core principle. We explicitly do NOT collect:</p>
         <ul>
-            <li>Email: support@grcbt.com</li>
-            <li>Website: <a href="https://grcbt.com" target="_blank">https://grcbt.com</a></li>
+            <li>Personal identification information (name, email, address, etc.)</li>
+            <li>Browsing history or website visit data</li>
+            <li>Search queries or user behavior patterns</li>
+            <li>Financial information or trading activity</li>
+            <li>Location data or IP addresses</li>
+            <li>Cookies or tracking identifiers</li>
+            <li>Any form of analytics or telemetry data</li>
         </ul>
-    </div>
 
-    <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-    <p style="text-align: center; color: #666;">
-        <strong>By using Stock Market Analysis extension, you agree to this privacy policy.</strong>
-    </p>
+        <h2>2. How the Extension Works</h2>
+
+        <h3>2.1 Local Processing</h3>
+        <p>All stock symbol detection and analysis happens locally in your browser. No data is sent to our servers.</p>
+
+        <h3>2.2 External API Calls</h3>
+        <p>The extension makes direct API calls to third-party services to fetch stock data:</p>
+        <ul>
+            <li><strong>Yahoo Finance API</strong> - For real-time US stock prices and market data</li>
+            <li><strong>Exchange Rate API</strong> - For currency conversion rates</li>
+        </ul>
+        <p>These API calls only transmit stock symbols (e.g., "SPY", "AAPL") - no personal information is included.</p>
+
+        <h3>2.3 Local Storage</h3>
+        <p>The extension uses Chrome's local storage to cache:</p>
+        <ul>
+            <li>Stock price data (expires after 1 minute)</li>
+            <li>User's last searched stock symbols (for quick access)</li>
+            <li>Trending stocks list (expires after 5 minutes)</li>
+            <li>Extension preferences and settings</li>
+        </ul>
+        <p><strong>Important:</strong> All cached data is stored locally on your device and is never transmitted to any
+            server.</p>
+
+        <h2>3. Permissions Explained</h2>
+
+        <h3>3.1 Storage Permission</h3>
+        <p><strong>Why we need it:</strong> To cache stock data locally and improve performance by reducing API calls.
+        </p>
+        <p><strong>What we do:</strong> Store temporary stock price data and user preferences on your device.</p>
+        <p><strong>What we DON'T do:</strong> Store personal information or browsing history.</p>
+
+        <h3>3.2 ActiveTab Permission</h3>
+        <p><strong>Why we need it:</strong> To allow manual activation of stock analysis when you click the extension
+            icon.</p>
+        <p><strong>What we do:</strong> Read text content on the active tab to detect stock symbols.</p>
+        <p><strong>What we DON'T do:</strong> Access tabs you haven't explicitly activated the extension on.</p>
+
+        <h3>3.3 Host Permissions</h3>
+        <p><strong>Why we need it:</strong> To automatically detect stock symbols on popular financial websites and
+            fetch data from APIs.</p>
+        <p><strong>Websites we access:</strong></p>
+        <ul>
+            <li>Yahoo Finance, Google Finance, Bloomberg, CNBC, MarketWatch</li>
+            <li>Investing.com, Seeking Alpha, Motley Fool</li>
+            <li>Reddit (r/stocks, r/wallstreetbets, r/investing)</li>
+            <li>Twitter/X, Hacker News</li>
+        </ul>
+        <p><strong>What we do:</strong> Detect stock symbols mentioned on these sites to provide instant analysis.</p>
+        <p><strong>What we DON'T do:</strong> Track your activity, collect browsing data, or monitor your behavior.</p>
+
+        <h2>4. Third-Party Services</h2>
+
+        <h3>4.1 Yahoo Finance</h3>
+        <p>We use Yahoo Finance's public API to fetch real-time stock market data. Please review their privacy policy
+            at: <a href="https://legal.yahoo.com/us/en/yahoo/privacy/index.html" target="_blank">Yahoo Privacy
+                Policy</a></p>
+
+        <h3>4.2 Exchange Rate API</h3>
+        <p>We use Exchange Rate API for currency conversion. Please review their privacy policy at: <a
+                href="https://www.exchangerate-api.com/terms" target="_blank">Exchange Rate API Terms</a></p>
+
+        <h2>5. Data Security</h2>
+        <p>Since we don't collect or store personal data on our servers, there is no risk of data breaches from our end.
+            All data processing happens locally in your browser using secure HTTPS connections to external APIs.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our extension does not knowingly collect information from children under 13. The extension is designed for
+            general stock market analysis and does not target children.</p>
+
+        <h2>7. Changes to Privacy Policy</h2>
+        <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated
+            "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Since we don't collect personal data, there is no personal information to access, modify, or delete. You can:
+        </p>
+        <ul>
+            <li>Uninstall the extension at any time to remove all locally stored data</li>
+            <li>Clear your browser's local storage to remove cached stock data</li>
+            <li>Disable the extension to stop all functionality</li>
+        </ul>
+
+        <h2>9. Compliance</h2>
+        <p>This extension complies with:</p>
+        <ul>
+            <li>Chrome Web Store Developer Program Policies</li>
+            <li>General Data Protection Regulation (GDPR)</li>
+            <li>California Consumer Privacy Act (CCPA)</li>
+        </ul>
+
+        <div class="contact">
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions or concerns about this privacy policy, please contact us:</p>
+            <p>
+                <strong>Website:</strong> <a href="https://www.grcbt.com" target="_blank">www.grcbt.com</a><br>
+                <strong>Support:</strong> <a href="https://www.grcbt.com/support"
+                    target="_blank">www.grcbt.com/support</a>
+            </p>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="text-align: center; color: #999; font-size: 14px;">
+            © 2024 AI US Stock Analysis. All rights reserved.<br>
+            Powered by <a href="https://www.grcbt.com" target="_blank">grcbt.com</a>
+        </p>
+    </div>
 </body>
 
 </html>
